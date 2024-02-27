@@ -5,6 +5,11 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kreta.Desktop", "Kreta.Desktop.csproj", "{CD2DE89C-6CF6-41BF-A135-5CE3C4038533}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E309A6C8-AAC3-4869-A6CF-1817B90BB250}"
+	ProjectSection(SolutionItems) = preProject
+		feladat.docx = feladat.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
