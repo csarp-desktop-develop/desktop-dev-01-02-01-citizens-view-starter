@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MenuProject.Views
+namespace MenuProject.Views.SchoolCitizens
 {
     /// <summary>
-    /// Interaction logic for StudentView.xaml
+    /// Interaction logic for ParentView.xaml
     /// </summary>
-    public partial class StudentView : UserControl
+    public partial class ParentView : UserControl
     {
-        public StudentView()
+        public ParentView()
         {
             InitializeComponent();
         }

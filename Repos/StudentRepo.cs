@@ -1,9 +1,9 @@
-﻿using StudentProject.Models;
+﻿using MenuProject.SchoolCitizens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Kreta.Desktop.Repos
+namespace MenuProject.Repos
 {
     public class StudentRepo
     {
@@ -86,10 +86,7 @@ namespace Kreta.Desktop.Repos
             else
             {
                 Student? studentToUpdate = _students.FirstOrDefault(s => s.Id == student.Id);
-                if (studentToUpdate is not null)
-                {
-                    studentToUpdate.Set(student);
-                }
+                studentToUpdate?.Set(student);
             }
         }
 

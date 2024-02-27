@@ -1,11 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Kreta.Desktop.Repos;
+using MenuProject.Repos;
+using MenuProject.SchoolCitizens;
 using MenuProject.ViewModels.Base;
-using StudentProject.Models;
 using System.Collections.ObjectModel;
 
-namespace MenuProject.ViewModels
+namespace MenuProject.ViewModels.SchoolCitizens
 {
     public partial class StudentViewModel : BaseViewModel
     {
@@ -24,7 +24,7 @@ namespace MenuProject.ViewModels
         public StudentViewModel()
         {
             _selectedStudent = new Student();
-            Update();
+            UpdateView();
         }
 
         [RelayCommand]
@@ -34,7 +34,7 @@ namespace MenuProject.ViewModels
                 _studentRepo.Update(student);
             else
                 _studentRepo.Insert(student);
-            Update();
+            UpdateView();
         }
 
         [RelayCommand]
@@ -47,10 +47,10 @@ namespace MenuProject.ViewModels
         public void DoRemove(Student studentToDelete)
         {
             _studentRepo.Delete(studentToDelete);
-            Update();
+            UpdateView();
         }
 
-        private void Update()
+        private void UpdateView()
         {
             EducationLevels = new ObservableCollection<string>(_educationLevelsRepo.FindAll());
             Students = new ObservableCollection<Student>(_studentRepo.FindAll());

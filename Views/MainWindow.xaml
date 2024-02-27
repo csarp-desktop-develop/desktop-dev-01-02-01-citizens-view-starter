@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MenuProject.Views"
+        xmlns:citizensviewmodel="clr-namespace:MenuProject.ViewModels.SchoolCitizens"
+        xmlns:citizensview="clr-namespace:MenuProject.Views.SchoolCitizens"
         xmlns:viewmodel="clr-namespace:MenuProject.ViewModels"
         xmlns:view="clr-namespace:MenuProject.Views"
         mc:Ignorable="d"
@@ -15,17 +17,16 @@
         <DataTemplate DataType="{x:Type viewmodel:WelcomeViewModel}">
             <view:WelcomeView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type viewmodel:StudentViewModel}">
-            <view:StudentView/>
+        <DataTemplate DataType="{x:Type citizensviewmodel:StudentViewModel}">
+            <citizensview:StudentView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type viewmodel:TeacherViewModel}">
-            <view:TeacherView/>
+        <DataTemplate DataType="{x:Type citizensviewmodel:TeacherViewModel}">
+            <citizensview:TeacherView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type viewmodel:ParentViewModel}">
-            <view:ParentView/>
+        <DataTemplate DataType="{x:Type citizensviewmodel:ParentViewModel}">
+            <citizensview:ParentView/>
         </DataTemplate>
     </Window.Resources>
-    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />

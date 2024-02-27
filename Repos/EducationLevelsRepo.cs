@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Documents;
 
-namespace Kreta.Desktop.Repos
+namespace MenuProject.Repos
 {
     public class EducationLevelsRepo
     {

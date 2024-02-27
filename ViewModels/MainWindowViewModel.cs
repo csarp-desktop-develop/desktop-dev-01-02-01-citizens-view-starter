@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MenuProject.ViewModels.Base;
+using MenuProject.ViewModels.SchoolCitizens;
 
 namespace MenuProject.ViewModels
 {
